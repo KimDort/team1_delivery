@@ -18,7 +18,7 @@ import team.domain.*;
 @Service
 @Transactional
 public class PolicyHandler{
-    @Autowired OrderRepository orderRepository;
+    @Autowired StoreRepository storeRepository;
     
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
@@ -33,7 +33,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        Order.receiveOrderInformation(event);
+        Store.receiveOrderInformation(event);
         
 
         

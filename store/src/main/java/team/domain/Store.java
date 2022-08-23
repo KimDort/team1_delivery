@@ -11,10 +11,10 @@ import lombok.Data;
 import java.util.Date;
 
 @Entity
-@Table(name="Order_table")
+@Table(name="Store_table")
 @Data
 
-public class Order  {
+public class Store  {
 
     
     @Id
@@ -74,9 +74,9 @@ public class Order  {
 
     }
 
-    public static OrderRepository repository(){
-        OrderRepository orderRepository = StoreApplication.applicationContext.getBean(OrderRepository.class);
-        return orderRepository;
+    public static StoreRepository repository(){
+        StoreRepository storeRepository = StoreApplication.applicationContext.getBean(StoreRepository.class);
+        return storeRepository;
     }
 
 
@@ -85,17 +85,17 @@ public class Order  {
     public static void receiveOrderInformation(OrderPaid orderPaid){
 
         /** Example 1:  new item 
-        Order order = new Order();
-        repository().save(order);
+        Store store = new Store();
+        repository().save(store);
 
         */
 
         /** Example 2:  finding and process
         
-        repository().findById(orderPaid.get???()).ifPresent(order->{
+        repository().findById(orderPaid.get???()).ifPresent(store->{
             
-            order // do something
-            repository().save(order);
+            store // do something
+            repository().save(store);
 
 
          });

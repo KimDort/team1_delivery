@@ -51,13 +51,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key="orders"
-                        to="/orders"
+                        key="stores"
+                        to="/stores"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        Order
+                        Store
                     </v-list-item>
 
 
@@ -159,13 +159,13 @@
                                     class="mx-auto"
                                     outlined
                                     rounded
-                                    key="orders"
-                                    to="/orders"
+                                    key="stores"
+                                    to="/stores"
                                     @click="changeUrl()"
                                     color="deep-purple lighten-2"
                                     style="font-weight:500; font-size:20px; padding:15px; border:solid 2px;"
                                 >
-                                    Order
+                                    Store
                                 </v-btn>
                             </v-card-actions>
                         </v-card>

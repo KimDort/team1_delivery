@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 
 @RestController
-// @RequestMapping(value="/orders")
+// @RequestMapping(value="/stores")
 @Transactional
-public class OrderController {
+public class StoreController {
     @Autowired
-    OrderRepository orderRepository;
+    StoreRepository storeRepository;
 
 
 

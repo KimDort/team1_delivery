@@ -15,7 +15,7 @@ public class CookingStarted extends AbstractEvent {
     private String quantity;
     private String status;
 
-    public CookingStarted(Order aggregate){
+    public CookingStarted(Store aggregate){
         super(aggregate);
     }
     public CookingStarted(){
